@@ -13,6 +13,7 @@ const Nav = styled.nav`
 
     const StyledLink = styled.a`
         padding: 0rem 2rem;
+        color: #fff;
     `
 
 const Navbar = () => {
