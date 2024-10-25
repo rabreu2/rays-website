@@ -6,11 +6,11 @@ const Hero = styled.div`
   display: flex;
   justify-content: center;
   align-tems: center;
-  background: #fff;
+  background: #000;
 `
 
 const Heading = styled.h1`
-  color: #000;
+  color: #fff;
   font-size: 10rem;
   font-weight: 900;
 `

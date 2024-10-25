@@ -1,8 +1,12 @@
-import type { Metadata } from "next";
+'use client'
+
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Particles from "@/components/ui/particles";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,22 +19,31 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Ray Abreu | Full Stack Developer",
-  description: "Welcome to my website!",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { theme } = useTheme();
+  const [color, setColor] = useState("#000000");
+  useEffect(() => {
+    setColor(theme === "dark" ? "#000000" : "#ffffff");
+  }, [theme]);
   return (
     <html lang="en">
+      <head >
+        <title>Ray Abreu | Full Stack Developer</title>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       ><Navbar></Navbar>
-        {children}
+        <Particles
+        className="absolute inset-0"
+        quantity={1000}
+        ease={80}
+        color={color}
+        refresh
+      />{children}
         <Footer></Footer>
       </body>
     </html>
