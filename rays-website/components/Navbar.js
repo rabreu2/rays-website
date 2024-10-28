@@ -11,28 +11,43 @@ const Nav = styled.nav`
     align-items: center;
     `;
 
-    const StyledLink = styled.a`
-        padding: 0rem 2rem;
-        color: #d9d9d9;
-    `
+const StyledLink = styled.a`
+    color: #d9d9d9;
+    &:hover {
+        color: #56c495;
+    }
+    `;
+
+const NavElements = styled.div`
+    padding: 0rem 2rem;     
+`;
+
+const ContactElement = styled.div`
+    padding: 0rem 6rem 0rem 2rem;     
+`;
 
 const Navbar = () => {
   return (
     <Nav>
-        <div>
+        <NavElements>
             <Link href={"/"}><StyledLink>Home</StyledLink></Link>
-        </div>
-        <div>
+        </NavElements>
+        <NavElements>
             <Link href={"/about"}><StyledLink>About</StyledLink></Link>
-        </div>
-        <div>
+        </NavElements>
+        <NavElements>
             <Link href={"/projects"}><StyledLink>Projects</StyledLink></Link>
-        </div>
-        <div>
+        </NavElements>
+        <ContactElement>
             <Link href={"/contact"}><StyledLink>Contact</StyledLink></Link>
-        </div>
+        </ContactElement>
     </Nav>
   )
+}
+
+function stext() {
+    var x = document.getElementById("link1");
+    x.style.color = 'red';
 }
 
 export default Navbar
