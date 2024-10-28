@@ -13,7 +13,7 @@ const Nav = styled.nav`
 
     const StyledLink = styled.a`
         padding: 0rem 2rem;
-        color: #fff;
+        color: #d9d9d9;
     `
 
 const Navbar = () => {
@@ -24,6 +24,9 @@ const Navbar = () => {
         </div>
         <div>
             <Link href={"/about"}><StyledLink>About</StyledLink></Link>
+        </div>
+        <div>
+            <Link href={"/projects"}><StyledLink>Projects</StyledLink></Link>
         </div>
         <div>
             <Link href={"/contact"}><StyledLink>Contact</StyledLink></Link>

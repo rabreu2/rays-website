@@ -3,10 +3,6 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef } from "react";
 
-
-
-
-
 interface ParticlesProps {
   className?: string;
   quantity?: number;
@@ -18,6 +14,7 @@ interface ParticlesProps {
   vx?: number;
   vy?: number;
 }
+
 function hexToRgb(hex: string): number[] {
   hex = hex.replace("#", "");
 
@@ -75,8 +72,6 @@ const Particles: React.FC<ParticlesProps> = ({
     resizeCanvas();
     drawParticles();
   };
-
-
 
   type Circle = {
     x: number;
