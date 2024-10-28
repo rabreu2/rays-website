@@ -28,7 +28,7 @@ const Ray = styled.span`
 export default function Home() {
   return (
     <Hero>
-      <Heading>Hello, I'm <Ray>Ray</Ray>.<br/>Welcome to my website!</Heading>
+      <Heading>Hello, I&apos;m <Ray>Ray</Ray>.<br/>Welcome to my website!</Heading>
     </Hero>
   );
 }
