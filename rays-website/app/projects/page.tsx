@@ -10,10 +10,9 @@ const Hero = styled.div`
 `
 
 const Heading = styled.h1`
-  color: #d9d9d9;
-  font-size: 3.7rem;
-  font-weight: 500;
-  text-align: center;
+  color: #fff;
+  font-size: 10rem;
+  font-weight: 900;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -21,14 +20,10 @@ const Heading = styled.h1`
   transform: translateY(-50%);
 `
 
-const Ray = styled.span`
-  color: #56c495;
-`
-
-export default function Home() {
+export default function Projects() {
   return (
     <Hero>
-      <Heading>Hello, I&apos;m <Ray>Ray</Ray>.<br/>Welcome to my website!</Heading>
+      <Heading>Projects</Heading>
     </Hero>
   );
 }

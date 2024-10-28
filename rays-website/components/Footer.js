@@ -4,9 +4,10 @@ import styled from 'styled-components'
 
 const FooterStyle = styled.div`
     background: #000;
-    color: #fff;
+    color: #9c9c9c;
     height: 60px;
     display: flex;
+    font-size: .85rem;
     justify-content: center;
     align-items: center;
 `
@@ -14,7 +15,7 @@ const FooterStyle = styled.div`
 const Footer = () => {
   return (
     <FooterStyle>
-        <p>Property of Ray Abreu, but you can use it if you ask nicely</p>
+        <p>Ray Abreu ©2024</p>
     </FooterStyle>
   )
 }
