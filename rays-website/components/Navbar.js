@@ -42,9 +42,4 @@ const Navbar = () => {
     )
 }
 
-function stext() {
-    var x = document.getElementById("link1");
-    x.style.color = 'red';
-}
-
 export default Navbar

@@ -18,10 +18,6 @@ const VerticalBar = styled.div`
   margin: 0 4vw 0 3vw;
 `
 
-const Center = styled.div`
-  width: 612px;
-`;
-
 const Row = styled.div<{ odd?: boolean }>`
   display: flex;
   justify-content: center;
