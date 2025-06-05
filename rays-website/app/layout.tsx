@@ -31,19 +31,22 @@ export default function RootLayout({
   }, [theme]);
   return (
     <html lang="en">
-      <head >
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ray Abreu | Full Stack Developer</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       ><Navbar></Navbar>
-        <Particles
-        className="absolute inset-0"
-        quantity={1000}
-        ease={80}
-        color={color}
-        refresh
-      />{children}
+        <div className="relative">
+          <Particles
+            className="absolute inset-0 h-[86.3vh] h-xl:h-[100%]"
+            quantity={1000}
+            ease={80}
+            color={color}
+            refresh
+          />{children}
+        </div>
         <Footer></Footer>
       </body>
     </html>

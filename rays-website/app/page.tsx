@@ -1,25 +1,6 @@
 'use client'
 import styled from "styled-components";
-
-const Hero = styled.div`
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-tems: center;
-  background: #000;
-`
-
-const Heading = styled.h1`
-  color: #d9d9d9;
-  font-size: 3.7rem;
-  font-weight: 500;
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-`
+import { motion } from "framer-motion";
 
 const Ray = styled.span`
   color: #56c495;
@@ -27,8 +8,15 @@ const Ray = styled.span`
 
 export default function Home() {
   return (
-    <Hero>
-      <Heading>Hello, I&apos;m <Ray>Ray</Ray>.<br/>Welcome to my website!</Heading>
-    </Hero>
+    <div className="flex justify-center bg-black h-[86.3vh] h-xl:h-[calc(100vh-180px)]">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+          style={{ display: 'flex', justifyContent: 'center' }}
+      >
+        <h1 className="text-[#d9d9d9] font-medium text-center m-0 absolute top-1/2 -translate-y-1/2 text-3xl sm:text-[3.7rem] sm:leading-none">Hello, I&apos;m <Ray>Ray</Ray>.<br />Welcome to my website!</h1>
+      </motion.div>
+    </div>
   );
 }
