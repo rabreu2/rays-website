@@ -14,7 +14,7 @@ export default function Contact() {
         style={{ display: 'flex', justifyContent: 'center' }}
         className="m-[1vh]"
       >
-        <div className="bg-[#212121] border border-[#212121] rounded-lg max-w-5xl p-[25px] z-40">
+        <div className="bg-[#212121] border border-[#212121] rounded-lg max-w-5xl p-[25px] z-[100]">
           <ContactForm></ContactForm>
         </div>
       </motion.div>
