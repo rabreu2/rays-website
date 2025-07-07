@@ -1,29 +1,19 @@
 'use client'
-import styled from "styled-components";
-
-const Hero = styled.div`
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-tems: center;
-  background: #000;
-`
-
-const Heading = styled.h1`
-  color: #fff;
-  font-size: 10rem;
-  font-weight: 900;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-`
+import { motion } from "motion/react";
 
 export default function Projects() {
   return (
-    <Hero>
-      <Heading>Projects</Heading>
-    </Hero>
+    <div className="flex items-center justify-center bg-black">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        className="flex justify-center"
+      >
+        <h1 className="text-[#d9d9d9] font-medium text-center m-0 text-3xl sm:text-[3.7rem] sm:leading-none">
+          Projects
+        </h1>
+      </motion.div>
+    </div>
   );
 }
