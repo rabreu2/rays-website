@@ -56,7 +56,7 @@ const Hex = styled.div`
 export default function About() {
 
   return (
-    <div className="flex flex-col text-center justify-center bg-black min-h-[86.3vh] xl:min-h-[calc(100vh-180px)]">
+    <div className="flex flex-col text-center justify-center bg-black">
       <h1 className="text-white text-5xl sm:text-7xl sm:mt-0 mt-11 mb-[85px]">About Me</h1>
       <div className="flex flex-col xl:flex-row justify-center items-center space-y-12 xl:space-y-0 xl:space-x-12">
         <div className="text-white max-w-xl text-xl">

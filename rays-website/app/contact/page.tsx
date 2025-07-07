@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col text-center items-center xl:justify-center bg-black min-h-[86.3vh] xl:min-h-[calc(100vh-180px)]">
+    <div className="flex flex-col text-center items-center xl:justify-center bg-black">
       <h1 className="text-white text-5xl sm:text-7xl my-[5vh] xl:my-[50px]">Contact Me</h1>
       <motion.div
         initial={{ opacity: 0 }}

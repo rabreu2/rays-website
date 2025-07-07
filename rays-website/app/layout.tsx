@@ -37,17 +37,20 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><Navbar></Navbar>
-        <div className="relative">
-          <Particles
-            className="absolute inset-0 h-[86.3vh] h-xl:h-[100%]"
-            quantity={1000}
-            ease={80}
-            color={color}
-            refresh
-          />{children}
+      >
+        <div className="flex flex-col min-h-[100dvh] w-full min-w-[360px]">
+          <Navbar></Navbar>
+          <main className="flex-grow w-full bg-black content-center">
+            <Particles
+              className="absolute inset-0 h-full"
+              quantity={1000}
+              ease={80}
+              color={color}
+              refresh
+            />{children}
+          </main>
+          <Footer></Footer>
         </div>
-        <Footer></Footer>
       </body>
     </html>
   );
