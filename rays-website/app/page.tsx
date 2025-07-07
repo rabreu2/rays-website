@@ -8,7 +8,7 @@ const Ray = styled.span`
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center bg-black min-h-[86.3vh] xl:min-h-[calc(100vh-180px)]">
+    <div className="flex items-center justify-center bg-black">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
