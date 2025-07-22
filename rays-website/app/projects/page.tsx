@@ -8,9 +8,9 @@ import Image from "next/image";
 export default function Projects() {
   return (
     <div className="transition-all duration-300 ease-in-out flex items-center justify-center bg-black w-full">
-      <div className="w-full px-5 lg:px-10">
+      <div className="w-full px-5 lg:px-10 pt-10 sm:pt-0">
         <div className="flex items-center justify-center">
-          <h1 className="text-white text-5xl md:text-6xl xl:text-7xl mb-[65px] sm:mb-[120px] md:my-[80px] lg:my-[100px] 2xl:my-[150px]">
+          <h1 className="text-white text-5xl md:text-6xl xl:text-7xl mb-[100px] sm:mb-[120px] md:my-[80px] lg:my-[135px] 2xl:my-[150px]">
             My Projects
           </h1>
         </div>
