@@ -18,7 +18,9 @@ const VerticalBar = styled.div`
   margin: 0 4vw 0 3vw;
 `
 
-const Row = styled.div<{ odd?: boolean }>`
+const Row = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== 'odd',
+}) <{ odd?: boolean }>`
   display: flex;
   justify-content: center;
   margin-bottom: -24px;
@@ -87,16 +89,16 @@ export default function About() {
               />
             </svg>
             <p className="mx-2 my-0">
-            Lasting over a decade (and counting!), my passion for software
-            development began back in high school. What started as a love
-            for Java and SQL has evolved into a full-stack journey,
-            leading me to React, Next.js and TypeScript, as I enjoy staying
-            current with modern web technologies. A big part of what keeps me
-            excited about development is the satisfaction of solving logical
-            problems by building great software. When I am away from my
-            keyboard you can probably find me spending time with my daughter,
-            playing basketball, or shouting at the TV like the Knicks
-            and Giants can actually hear me.
+              Lasting over a decade (and counting!), my passion for software
+              development began back in high school. What started as a love
+              for Java and SQL has evolved into a full-stack journey,
+              leading me to React, Next.js and TypeScript, as I enjoy staying
+              current with modern web technologies. A big part of what keeps me
+              excited about development is the satisfaction of solving logical
+              problems by building great software. When I am away from my
+              keyboard you can probably find me spending time with my daughter,
+              playing basketball, or shouting at the TV like the Knicks
+              and Giants can actually hear me.
             </p>
           </motion.div>
         </div>
