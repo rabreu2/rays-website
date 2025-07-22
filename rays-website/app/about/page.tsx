@@ -59,8 +59,8 @@ export default function About() {
 
   return (
     <div className="flex flex-col text-center justify-center bg-black">
-      <h1 className="text-white text-5xl sm:text-7xl sm:mt-0 mt-11 mb-[85px]">About Me</h1>
-      <div className="flex flex-col xl:flex-row justify-center items-center space-y-12 xl:space-y-0 xl:space-x-12">
+      <h1 className="text-white text-5xl md:text-6xl xl:text-7xl mt-11 mb-[85px] sm:mt-[90px] md:mt-[110px] lg:mt-[135px] xl:mt-0">About Me</h1>
+      <div className="flex flex-col xl:flex-row justify-center items-center space-y-12 xl:space-y-0 xl:space-x-12 px-2.5">
         <div className="text-white max-w-xl text-xl">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
