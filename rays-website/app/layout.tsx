@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Particles from "@/components/ui/particles";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -52,6 +53,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
