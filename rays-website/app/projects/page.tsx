@@ -32,8 +32,8 @@ export default function Projects() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 2.0, ease: "easeOut" }}
             className="relative text-white flex flex-col items-start justify-center right-[2.5rem] md:right-[5rem]">
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-semibold mb-2 md:mb-5">Recipe4Me</h2>
-            <p className="text-xs sm:text-sm md:text-base xl:text-xl max-w-md mb-2 md:mb-5">
+            <h2 className="z-[100] text-xl sm:text-3xl md:text-5xl font-semibold mb-2 md:mb-5">Recipe4Me</h2>
+            <p className="z-[100] text-xs sm:text-sm md:text-base xl:text-xl max-w-md mb-2 md:mb-5">
               Full stack recipe search engine built with React, TypeScript, Next.js API routes and MongoDB
             </p>
             <a target="_blank" rel="noopener noreferrer" href='https://recipe4me.vercel.app/' className="text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
@@ -55,8 +55,8 @@ export default function Projects() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 2.0, ease: "easeOut" }}
             className="relative text-white text-right flex flex-col items-end justify-center left-[2.5rem] md:left-[5rem]">
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-semibold mb-2 md:mb-5">JankJep (WIP)</h2>
-            <p className="text-xs sm:text-sm md:text-base xl:text-xl max-w-md mb-2 md:mb-5">
+            <h2 className="z-[100] text-xl sm:text-3xl md:text-5xl font-semibold mb-2 md:mb-5">JankJep (WIP)</h2>
+            <p className="z-[100] text-xs sm:text-sm md:text-base xl:text-xl max-w-md mb-2 md:mb-5">
               Jeopardy! inspired game built with React, TypeScript, Next.js API routes and Cluebase API
             </p>
             <a target="_blank" rel="noopener noreferrer" href='https://www.jankjep.com/' className="text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
