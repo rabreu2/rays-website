@@ -36,12 +36,12 @@ export default function Projects() {
             <p className="z-[100] text-xs sm:text-sm md:text-base xl:text-xl max-w-md mb-2 md:mb-5">
               Full stack recipe search engine built with React, TypeScript, Next.js API routes and MongoDB
             </p>
-            <a target="_blank" rel="noopener noreferrer" href='https://recipe4me.vercel.app/' className="text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
+            <a target="_blank" rel="noopener noreferrer" href='https://recipe4me.vercel.app/' className="z-[100] text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
               <h3>
                 APPLICATION
               </h3>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href='https://github.com/rabreu2/recipe4me' className="text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
+            <a target="_blank" rel="noopener noreferrer" href='https://github.com/rabreu2/recipe4me' className="z-[100] text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
               <h3>
                 CODEBASE
               </h3>
@@ -59,12 +59,12 @@ export default function Projects() {
             <p className="z-[100] text-xs sm:text-sm md:text-base xl:text-xl max-w-md mb-2 md:mb-5">
               Jeopardy! inspired game built with React, TypeScript, Next.js API routes and Cluebase API
             </p>
-            <a target="_blank" rel="noopener noreferrer" href='https://www.jankjep.com/' className="text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
+            <a target="_blank" rel="noopener noreferrer" href='https://www.jankjep.com/' className="z-[100] text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
               <h3>
                 APPLICATION
               </h3>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href='https://github.com/rabreu2/jank-jep' className="text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
+            <a target="_blank" rel="noopener noreferrer" href='https://github.com/rabreu2/jank-jep' className="z-[100] text-base sm:text-xl xl:text-2xl mb-2 md:mb-5">
               <h3>
                 CODEBASE
               </h3>
